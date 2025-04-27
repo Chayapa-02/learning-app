@@ -29,17 +29,17 @@ const QuizResultScreen = ({ route, navigation }) => {
       return {
         title: "ยอดเยี่ยม!",
         message:
-          "คุณเข้าใจเนื้อหาบทเรียนนี้อย่างดีเยี่ยม คุณพร้อมที่จะไปเรียนรู้เนื้อหาขั้นสูงต่อไปแล้ว",
+          "คุณเข้าใจเนื้อหาบทเรียนนี้อย่างดีเยี่ยม คุณพร้อมที่จะไปเรียนรู้เนื้อหาเรื่องต่อไปแล้ว",
         icon: require("../src/images/trophy.png"),
-        color: "#FFD700",
+        color: "#3da600",
       };
     } else if (percentage >= 60) {
       return {
         title: "ดีมาก!",
         message:
-          "คุณเข้าใจเนื้อหาสNวนใหญ่ในบทเรียนนี้ แต่ยังมีบางส่วนที่ควรทบทวนเพิ่มเติม",
+          "คุณเข้าใจเนื้อหาส่วนใหญ่ในบทเรียนนี้ แต่ยังมีบางส่วนที่ควรทบทวนเพิ่มเติม",
         icon: require("../src/images/medal.png"),
-        color: "#4CAF50",
+        color: "#abbf09",
       };
     } else if (percentage >= 40) {
       return {
@@ -47,7 +47,7 @@ const QuizResultScreen = ({ route, navigation }) => {
         message:
           "คุณเข้าใจพื้นฐานบางส่วนของบทเรียน แต่ควรทบทวนเนื้อหาให้มากขึ้น และลองทำแบบทดสอบอีกครั้ง",
         icon: require("../src/images/good.png"),
-        color: "#2196F3",
+        color: "#f9e208",
       };
     } else {
       return {
@@ -55,7 +55,7 @@ const QuizResultScreen = ({ route, navigation }) => {
         message:
           "คุณยังไม่เข้าใจเนื้อหาส่วนใหญ่ในบทเรียนนี้ แนะนำให้กลับไปศึกษาบทเรียนอีกครั้งก่อนทำแบบทดสอบใหม่",
         icon: require("../src/images/retry.png"),
-        color: "#FF5722",
+        color: "#e70b04",
       };
     }
   };

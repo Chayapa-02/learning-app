@@ -40,7 +40,8 @@ const HomeScreen = ({ navigation }) => {
             resizeMode="contain"
           />
           <Text style={styles.appName}>12 Tenses Easy!</Text>
-          <Text style={styles.subtitle}>เรียนรู้ได้ทุกที่ทุกเวลา by Kru Chayapa Witchawanitchanun</Text>
+          <Text style={styles.subtitle}>เรียนรู้ได้ทุกที่ทุกเวลา</Text>
+          <Text style={styles.subtitle}>by Kru Chayapa Witchawanitchanun</Text>
         </View>
 
         {/* ส่วนเนื้อหา */}

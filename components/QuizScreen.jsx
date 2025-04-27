@@ -358,7 +358,7 @@ const QuizScreen = ({ route, navigation }) => {
         // explanation: "",
       },
       {
-        question: "They ___ sleeping at that time.",
+        question: "They ___ slept at that time.",
         options: ["will", "will have", "are", "have"],
         correctAnswer: 1,
         // explanation: "",
@@ -443,22 +443,22 @@ const QuizScreen = ({ route, navigation }) => {
   }, [lessonId]);
 
   // ตั้งเวลานับถอยหลัง
-  useEffect(() => {
-    if (loading) return;
+  // useEffect(() => {
+  //   if (loading) return;
 
-    const timer = setInterval(() => {
-      setTimeLeft((prevTime) => {
-        if (prevTime <= 1) {
-          clearInterval(timer);
-          handleTimeout();
-          return 0;
-        }
-        return prevTime - 1;
-      });
-    }, 1000);
+  //   const timer = setInterval(() => {
+  //     setTimeLeft((prevTime) => {
+  //       if (prevTime <= 1) {
+  //         clearInterval(timer);
+  //         handleTimeout();
+  //         return 0;
+  //       }
+  //       return prevTime - 1;
+  //     });
+  //   }, 1000);
 
-    return () => clearInterval(timer);
-  }, [currentQuestionIndex, loading]);
+  //   return () => clearInterval(timer);
+  // }, [currentQuestionIndex, loading]);
 
   // จัดการเมื่อหมดเวลา
   const handleTimeout = () => {
@@ -488,7 +488,7 @@ const QuizScreen = ({ route, navigation }) => {
       // ไปยังคำถามถัดไป
       setSelectedOption(null);
       setCurrentQuestionIndex(currentQuestionIndex + 1);
-      setTimeLeft(120);
+      // setTimeLeft(120);
     }
   };
 
@@ -539,7 +539,7 @@ const QuizScreen = ({ route, navigation }) => {
       // ไปยังคำถามถัดไป
       setSelectedOption(null);
       setCurrentQuestionIndex(currentQuestionIndex + 1);
-      setTimeLeft(120);
+      // setTimeLeft(120);
     }
   };
 
@@ -600,7 +600,7 @@ const QuizScreen = ({ route, navigation }) => {
                 {currentQuestionIndex + 1}/{quizQuestions.length}
               </Text>
             </View>
-
+{/* 
             <View style={styles.timerContainer}>
               <Ionicons
                 name="time-outline"
@@ -615,7 +615,7 @@ const QuizScreen = ({ route, navigation }) => {
               >
                 {timeLeft}
               </Text>
-            </View>
+            </View> */}
           </View>
 
           {/* คำถาม */}
