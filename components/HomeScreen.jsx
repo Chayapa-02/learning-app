@@ -49,8 +49,7 @@ const HomeScreen = ({ navigation }) => {
           <View style={styles.welcomeCard}>
             <Text style={styles.welcomeTitle}>Welcome!</Text>
             <Text style={styles.welcomeText}>
-              แอปพลิเคชันนี้จะช่วยให้คุณเข้าถึงบทเรียนได้ง่ายๆ เพียงปลายนิ้ว
-              สามารถเรียนรู้ได้ทุกที่ทุกเวลาตามที่คุณต้องการ
+              This application makes understanding all 12 tenses easy - just choose the lesson that suit you best.
             </Text>
 
             <TouchableOpacity
@@ -69,7 +68,8 @@ const HomeScreen = ({ navigation }) => {
                 source={require('../src/images/feature1.png')}
                 style={styles.featureIcon}
               /> */}
-              <Text style={styles.featureTitle}>Let's have fun with English</Text>
+              <Text style={styles.featureTitle}>Let's have fun with</Text>
+              <Text style={styles.subFeatureTitle}>English</Text>
               {/* <Text style={styles.featureText}>
                 ออกแบบมาให้เข้าใจง่ายสำหรับผู้เรียนทุกระดับ
               </Text> */}
@@ -184,15 +184,16 @@ const styles = StyleSheet.create({
   featuresContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent: 'space-between',
+    // justifyContent: 'space-between',
   },
   featureCard: {
     backgroundColor: '#ffffff',
     borderRadius: 10,
-    padding: 15,
+    padding: 20,
     marginBottom: 15,
-    width: width > 600 ? (width - 48) / 3 - 8 : '100%',
-    elevation: 2,
+    // marginVertical: 16,
+    width: '100%',
+    elevation: 3,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.1,
@@ -208,7 +209,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#FF69B4',
     marginBottom: 5,
-    fontFamily: 'fantasy',
+    textAlign: 'center',
+  },
+  subFeatureTitle: {
+    fontSize: 40,
+    fontWeight: 'bold',
+    color: '#FF69B4',
+    marginBottom: 5,
+    textAlign: 'center',
   },
   featureText: {
     fontSize: 14,

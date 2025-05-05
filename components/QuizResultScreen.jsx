@@ -249,8 +249,8 @@ const QuizResultScreen = ({ route, navigation }) => {
           <Text style={styles.feedbackText}>{feedback.message}</Text>
         </View>
 
-        {/* ปุMมแสดงรายละเอียดคำตอบ */}
-        <TouchableOpacity
+        {/* ปุ่มแสดงรายละเอียดคำตอบ */}
+        {/* <TouchableOpacity
           style={styles.toggleButton}
           onPress={toggleShowAnswers}
         >
@@ -262,12 +262,12 @@ const QuizResultScreen = ({ route, navigation }) => {
             size={20}
             color="#5e72e4"
           />
-        </TouchableOpacity>
+        </TouchableOpacity> */}
 
         {/* แสดงรายละเอียดคำตอบ */}
-        {renderAnswerDetails()}
+        {/* {renderAnswerDetails()} */}
 
-        {/* ปุMมดำเนินการ */}
+        {/* ปุ่มดำเนินการ */}
         <View style={styles.actionsContainer}>
           <TouchableOpacity
             style={[styles.actionButton, styles.retryButton]}

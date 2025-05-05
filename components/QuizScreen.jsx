@@ -70,8 +70,8 @@ const QuizScreen = ({ route, navigation }) => {
         // explanation: "",
       },
       {
-        question: "They ___ to Bangkok next week.",
-        options: ["go", "are going", "goes", "going"],
+        question: "___ they ___ to Bangkok next week.",
+        options: ["Are / go", "Are / going", "Is / going", "Was / going "],
         correctAnswer: 1,
         // explanation: "",
       },
@@ -97,7 +97,7 @@ const QuizScreen = ({ route, navigation }) => {
       },
       {
         question: "I ___ seen that movie before.",
-        options: ["has", "have", "had", "am"],
+        options: ["has", "haven't", "had not had", "am"],
         correctAnswer: 1,
         // explanation: "",
       },
@@ -128,8 +128,8 @@ const QuizScreen = ({ route, navigation }) => {
         // explanation: "",
       },
       {
-        question: "They ___ working all day.",
-        options: ["have", "have been", "has been", "are"],
+        question: "___they ___ working all day?",
+        options: ["Has / been", "Have / been", "had / being", "Have / being"],
         correctAnswer: 1,
         // explanation: "",
       },
@@ -193,7 +193,7 @@ const QuizScreen = ({ route, navigation }) => {
       },
       {
         question: "They ___ dinner at 8 PM.",
-        options: ["was having", "were having", "are having", "have"],
+        options: ["was having", "were having", "wasn't", "have"],
         correctAnswer: 1,
         // explanation: "",
       },
